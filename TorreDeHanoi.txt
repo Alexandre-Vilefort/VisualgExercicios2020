@@ -1,0 +1,113 @@
+Torre de Hanoi
+
+número impar de peças
+
+3 discos
+
+rx : T1 - > T3 	1
+vm : T1 - > T2	2
+rx : T3 - > T2	3
+lr : T1 - > T3	4
+rx : T2 - > T1	5
+vm : T2 - > T3	6
+rx : T1 - > T3	7
+
+4 discos
+
+rx : T1 - > T2 	1
+vm : T1 - > T3	2
+rx : T3 - > T3	3
+lr : T1 - > T2	4
+rx : T3 - > T1	5
+vm : T3 - > T2	6
+rx : T1 - > T2	7
+
+vd : T1 - > T3	8
+rx : T2 - > T3	9
+vm : T2 - > T1	10	
+rx : T3 - > T1	11
+lr : T2 - > T3	12
+rx : T1 - > T2	13
+vm : T1 - > T3	14
+rx : T2 - > T3	15
+
+5 discos
+
+rx : T1 - > T3	1
+vm : T1 - > T2	2  
+rx : T3 - > T2	3
+lr : T1 - > T3	4
+rx : T2 - > T1	5
+vm : T2 - > T3	6
+rx : T1 - > T3	7 
+vd : T1 - > T2	8 - verde
+rx : T3 - > T2	9
+vm : T3 - > T1	10	
+rx : T3 - > T1	11
+lr : T3 - > T2	12
+rx : T1 - > T3	13
+vm : T1 - > T2	14
+rx : T3 - > T2	15
+am : T1 - > T3	16
+rx : T2 - > T1	17
+vm : T2 - > T3	18
+rx : T1 - > T3	19
+lr : T2 - > T1	20
+rx : T3 - > T2	21
+vm : T3 - > T1	22
+rx : T2 - > T1	23
+vd : T2 - > T3	24 - verde
+rx : T1 - > T3	25
+vm : T1 - > T2	26
+rx : T3 - > T2	27
+lr : T1 - > T3	28	
+rx : T2 - > T1	29
+vm : T2 - > T3	30
+rx : T1 - > T3	31
+
+
+
+
+mov 1 2 3 4 5 6 7
+
+p1  3 0 2 0 1 0 3     
+
+p2  0 2 0 0 0 3 0
+
+p3  0 0 0 3 0 0 0
+
+    1 2 3 4 5 6 7 8 9 0 1 2 3          
+
+mov 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+
+p1  2 0 3 0 1 0 2 0 3 0 1 0 2 0 3    
+
+p2  0 3 0 0 0 2 0 0 0 1 0 0 0 3 0
+
+p3  0 0 0 2 0 0 0 0 0 0 0 3 0 0 0
+
+p4  0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 
+
+rx : T1 - > T2 	1
+vm : T1 - > T3	2
+rx : T3 - > T3	3
+lr : T1 - > T2	4
+rx : T3 - > T1	5
+vm : T3 - > T2	6
+rx : T1 - > T2	7
+
+vd : T1 - > T3	8
+rx : T2 - > T3	9
+vm : T2 - > T1	10	
+rx : T3 - > T1	11
+lr : T2 - > T3	12
+rx : T1 - > T2	13
+vm : T1 - > T3	14
+rx : T2 - > T3	15
+
+p1 = passo 2    - começa no 1
+p2 = passo 4	- começa no 2
+p3 = passo 8	- começa no 4 
+p4 = passo 16	- começa no 8
+
+
